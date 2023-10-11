@@ -26,15 +26,15 @@ while (level_choice == False):
     if level == "easy":
         word = getWord(easy)
         level_choice = True
-        tries = 8
+        tries = 5
     elif level == "medium":
         word = getWord(medium)
         level_choice = True
-        tries = 11
+        tries = 10
     elif level == "hard":
         word = getWord(hard)
         level_choice = True
-        tries = 14
+        tries = 15
     else:
         print("Not a valid selection")
 
@@ -58,7 +58,6 @@ while counter < unique_letters and tries > 0:
         print("\nYou guessed a correct letter!")
         correct_letters.append(guess)
         counter += 1
-        tries -= 1
     else:
         print("\nNot a correct letter, try again")
         tries -= 1
